@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Signup Form</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <img
+          src="public/images/eckert-dev-logo.svg"
+          height="100"
+          width="100"
+          alt="eckert.dev logo"
+        />
+        <h1>Eckert.Dev</h1>
+      </div>
+      <p class="credits">
+        Photo by
+        <a href="https://unsplash.com/@thejoltjoker">Johannes Andersson</a> on
+        <a
+          href="https://unsplash.com/photos/two-brown-deer-beside-trees-and-mountain-UCd78vfC8vU"
+        >
+          Unsplash
+        </a>
+      </p>
+    </div>
+    <div class="content">
+      <div class="header">
+        <h1>
+          This is not a real online service! You know you need something like
+          this in your life to help realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </h1>
+        <h1>You <em>know</em> you want to.</h1>
+      </div>
+      <div class="form-container">
+        <form action="https://httpbin.org/post" method="post">
+          <div class="inputs">
+            <h1>Let's do this!</h1>
+            <p>
+              <label for="firstName">
+                <span>First Name</span>
+              </label>
+              <input type="text" id="firstName" name="firstName" required />
+            </p>
+            <p>
+              <label for="lastName">
+                <span>Last Name</span>
+              </label>
+              <input type="text" id="lastName" name="lastName" required />
+            </p>
+            <p>
+              <label for="email">
+                <span>Email</span>
+              </label>
+              <input type="email" id="email" name="email" required />
+            </p>
+            <p>
+              <label for="phoneNumber">
+                <span>Phone Number</span>
+              </label>
+              <input type="tel" id="phoneNumber" name="phoneNumber" />
+            </p>
+            <p>
+              <label for="password">
+                <span>Password</span>
+              </label>
+              <input type="password" id="password" name="password" required />
+            </p>
+            <p>
+              <label for="confirmPassword">
+                <span>Confirm Password</span>
+              </label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                required
+              />
+            </p>
+          </div>
+          <div class="actions">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a>Log in</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

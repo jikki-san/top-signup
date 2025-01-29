@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "rusted";
+  src: url(public/fonts/introrustg-base2line-webfont.woff2),
+    url(public/fonts/introrustg-base2line-webfont.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 40vw;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(public/images/yosemite.jpg);
+  background-size: cover;
+}
+
+.logo {
+  width: 100%;
+  margin-top: 240px;
+  background-color: rgb(0 0 0 / 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  h1 {
+    font: 3em "rusted";
+    text-transform: uppercase;
+    color: #f9fafb;
+  }
+}
+
+.credits,
+.credits a {
+  color: #f9fafb;
+}
+
+.content {
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.header {
+  flex-grow: 1;
+}
+
+.form-container {
+  width: 100%;
+  flex-grow: 2;
+}
+
+.inputs {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+/* div {
+  border: 1px solid red;
+} */
